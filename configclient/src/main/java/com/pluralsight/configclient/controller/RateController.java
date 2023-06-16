@@ -24,7 +24,7 @@ public class RateController {
         
         model.addAttribute("rateamount", rate);
         model.addAttribute("lanes", lanecount);
-        model.addAttribute("connstring", connectionstring);
+        //model.addAttribute("connstring", connectionstring);
 
         return "rateview";
     }
