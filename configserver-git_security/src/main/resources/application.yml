@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+encrypt:
+  key: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+spring:
+  security:
+    user:
+      name: admin
+      password: pluralsight
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rseroter/pluralsight-spring-cloudconfig-wa-tolls-2
+          search-paths: 
+          - station*
+          repos:
+            perf:
+              pattern: '*/perf'
+              uri: https://github.com/rseroter/pluralsight-spring-cloudconfig-wa-tolls-perf-2
+              search-paths: 
+              - station*
