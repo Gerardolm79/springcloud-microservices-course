@@ -7,7 +7,7 @@ encrypt:
 spring:
   security:
     user:
-      name: admin
+      name: pluralsight
       password: pluralsight
   cloud:
     config:
